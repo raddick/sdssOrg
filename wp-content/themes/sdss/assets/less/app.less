@@ -1,0 +1,438 @@
+/*!
+ * Roots 6.5.2
+ */
+
+@import "bootstrap/bootstrap.less";
+
+
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {font-size:100%; }
+.content.row {margin-bottom: 200px;}
+
+.home .main {
+  padding: 0;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navbar-inverse { border-radius: 0; background:rgba(0, 0, 0, .9); border-bottom:1px solid rgba(255, 255, 255, 0.15); min-height:5em; margin-bottom:0;}
+.navbar-inverse *:focus { outline: 0; }
+
+.navbar-inverse .navbar-brand {font-size: 24px; color:white; padding:0 0 0 15px; margin:12px 0 0 0; }
+
+.navbar-nav {margin: 1em;}
+
+.navbar-nav .dropdown-menu {left:-5px; font-size: 13px; background-color: rgba(0, 0, 0, .7); border: 0px none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.navbar-nav .dropdown-menu > li > a { color:rgba(255, 255, 255, 1); padding:7px 20px; }
+  .navbar-nav .dropdown-menu > li > a:hover,
+  .navbar-nav .dropdown-menu > li > a:focus,
+  .navbar-nav .dropdown-menu > .active > a:hover{ background: rgba(255, 255, 255, .1); color:white; }
+
+.navbar-nav .dropdown-menu > .active > a,
+.navbar-nav .dropdown-menu > .active > a:focus { background: none; color:#fff; }
+
+.navbar-nav .btn { border:1px solid rgba(255, 255, 255, .2); margin-left:5px; margin-top:5px; padding-top:10px; padding-bottom:10px; }
+
+.navbar-nav a.btn:focus, 
+.navbar-nav a.btn:hover  { border:1px solid rgba(255,255,255,.6); }
+
+.navbar-collapse { border:0 none;  border-top:0 none; box-shadow: none; }
+.navbar-static-top,
+.navbar-fixed-top,
+.navbar-fixed-bottom { border-radius: 0; }
+
+.nav-pills>li>a {color: #777777;}
+.nav-pills>li>a:hover {color: #ffffff; background: rgba(0,0,0,.9); transition: background 0.5s ease;border-left: 5px solid @brand-sdss;}
+.nav-pills>li.active>a,  .nav-pills>li.active>a:focus{color: inherit; background: inherit; border-left: 5px solid @brand-sdss;}
+.nav-pills>li.active>a:hover {background: rgba(0,0,0,.9);}
+
+.btn-sdss:hover{color: #ffffff; background: rgba(0,0,0,.9); transition: background 0.5s ease;border-left: 5px solid @brand-sdss;}
+
+.btn-sdss:hover, .btn-sdss:focus, .btn-sdss:active, .btn-sdss.active, .open .dropdown-toggle.btn-sdss {color: #ffffff; background: rgba(0,0,0,.9); transition: background 0.5s ease;border-left: 5px solid @brand-sdss;}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner {}
+
+/* Autohide navbar */
+.slideUp { top:-100px; }
+.headroom { -webkit-transition: all 0.4s ease-out; -moz-transition: all 0.4s ease-out; -o-transition: all 0.4s ease-out; transition: all 0.4s ease-out; }
+
+.progress-bar-theme {
+  background-color: #1abc9c;
+}
+
+.headroom { position: fixed;top: 0;left: 0;right: 0;transition: all .4s ease-in-out;}
+.headroom--unpinned {top: -120px;}
+.headroom--pinned {top: 0;}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.content {}
+.content-section {padding: 1em;}
+.hero {position: relative; overflow: hidden; margin-bottom: 0; padding: 0; } 
+.hero-unit {position: relative; overflow: hidden; margin-bottom: 6%;}
+.panner { overflow: hidden; line-height: 0;}
+.panner img { width: 400%; max-width: 2000px; margin-top:-1.1em;}
+.branding {background: rgba(0,0,0,0.7); color: #fff; display: block; padding: 0 1%; width: 100%; text-decoration: none; font-size: 1.2em; transition: background-color 0.3s ease; } 
+.branding>p {font-size: 18px; } .surveys {margin-bottom: 2em; } 
+#links {display:table; width: 100%; height: 400px; background:url('/wp-content/uploads/2014/05/sdss-telescope-small.png')no-repeat top center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-color: #000; 
+ h4 { color: #fff; 
+      text-shadow: 2px 2px 3px rgba(0,0,0,.9); } 
+ .well {background-color: rgba(236, 240, 241, .9); }     
+      }
+
+.flex-caption {color: @body-bg; width: 40%; padding: 10px; margin: 0 0 60px 60px; background-color: #222; background: rgba(0,0,0,.8); position: absolute; display: block; left: 0; bottom: 0; border-left: 4px solid @brand-sdss; }
+.sdss-docs-section {padding-left: 1em; margin-bottom: 3.5em;}
+figcaption{font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+.responsive-video { position: relative; padding-bottom: 56.25%; padding-top: 60px; overflow: hidden; margin: 1em 0em 2em 0em;}
+
+.responsive-video iframe, .responsive-video object, .responsive-video embed {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+#classic p {
+font-size: 85%;
+}
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+
+.survey, .survey-2{width:250px; height:250px; margin:10px auto; border-radius:250px; border:5px solid #fff; box-shadow:0px 0px 3px #aaa; text-align:center; -webkit-transition:border 1s ease; -moz-transition:border 1s ease; -o-transition:border 1s ease; transition:border 1s ease;  }
+
+.survey-img-1 {background: url(/wp-content/uploads/2014/06/apogee.jpg) no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-position: 30% 50%;}
+.survey-img-2 {background: url(/wp-content/uploads/2014/06/boss.jpg) no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-position: 30% 50%;}
+.survey-img-3 {background: url(/wp-content/uploads/2014/06/feature_manga_2-1.png) no-repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-bakground-size: cover; background-position: 55% 1%;}
+.survey-img-4 {background: url(/wp-content/uploads/2014/06/faceplat.jpg) no-repeat top center; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; }
+
+.survey:hover{border: 5px solid @brand-sdss; -webkit-transition:border 1s ease; -moz-transition:border 1s ease; -o-transition:border 1s ease; transition:border 1s ease; }
+.survey-2:hover{border: 5px solid @brand-sdss-footer; -webkit-transition:border 1s ease; -moz-transition:border 1s ease; -o-transition:border 1s ease; transition:border 1s ease; }
+.survey-description{width:95%; margin:20% auto; padding-top:15px; color: #fff; text-shadow: 2px 2px 3px rgba(0,0,0,.9); 
+.btn {text-shadow: none;}
+
+}
+
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+.ch-grid {margin: 20px 0 0 0; padding: 0; list-style: none; display: block; text-align: center; width: 100%; 
+ & li {width: 220px; height: 220px; display: inline-block; margin: 20px; } 
+ } 
+.ch-grid:after, .ch-item:before {content: ''; display: table; } 
+.ch-grid:after {clear: both; } 
+
+.ch-item {width: 100%; height: 100%; border-radius: 50%; position: relative; cursor: default; -webkit-perspective: 900px; -moz-perspective: 900px; -o-perspective: 900px; -ms-perspective: 900px; perspective: 900px; } 
+
+.ch-img {
+  &-1 {background-image: url(/wp-content/uploads/2014/06/boss.jpg); }
+  &-2 {background-image: url(/wp-content/uploads/2014/06/segue.jpg); background-position: 20% 65% !important; }
+  &-3 {background-image: url(/wp-content/uploads/2014/06/apogee.jpg);}
+  &-4 {background-image: url(/wp-content/uploads/2014/06/feature_manga_2.jpg);}
+}
+
+.ch-info  { position: absolute; width: 100%; height: 100%; -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; -o-transform-style: preserve-3d; -ms-transform-style: preserve-3d; transform-style: preserve-3d; 
+
+     & .ch-info-front {box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3); }
+     & .ch-info-back {-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg); -moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg); -o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg); -ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg); transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg); background: #000; opacity: 0; }
+     & h3 {letter-spacing: 2px; margin: 0 15px; padding: 40% 0 0 0; height: 110px; text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3); }
+     & a:hover {color: @brand-sdss; color: rgba(102, 0, 255, .8); }
+     & > div {display: block; position: absolute; width: 100%; height: 100%; border-radius: 50%; background-position: center center; -webkit-transition: all 0.4s linear; -moz-transition: all 0.4s linear; -o-transition: all 0.4s linear; -ms-transition: all 0.4s linear; transition: all 0.4s linear; -webkit-transform-origin: 50% 0%; -moz-transform-origin: 50% 0%; -o-transform-origin: 50% 0%; -ms-transform-origin: 50% 0%; transform-origin: 50% 0%; }
+}
+
+.ch-item:hover {
+  & .ch-info-front {-webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg); -moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg); -o-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg); -ms-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg); transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg); opacity: 0; }
+  & .ch-info-back {-webkit-transform: rotate3d(1,0,0,0deg); -moz-transform: rotate3d(1,0,0,0deg); -o-transform: rotate3d(1,0,0,0deg); -ms-transform: rotate3d(1,0,0,0deg); transform: rotate3d(1,0,0,0deg); opacity: 1; }
+}
+
+.ch-info-back hr {width: 65%; margin-top: -5px; margin-bottom: -5px; }
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+.doc-sidebar .affix {position:relative}
+.nav-doc {display:inline-block;margin-top:2rem;border:1px solid #ddd;border-radius:4px;list-style:none}
+.nav-doc>li:first-child {border-top-left-radius:4px;border-top-right-radius:4px}
+.nav-doc>li:last-child {border-bottom:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px}
+.nav-doc>li a:hover {background:0}
+.nav-doc>li.active {background:#27ae60}
+.nav-doc>li.active a {color:#fff;font-weight:400;}
+@media (min-width:992px) {.doc-sidebar .affix {position:fixed;top:20px}
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+.group {
+    background: yellow;
+    width: 200px;
+    height: 500px;
+}
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 200px;
+}
+
+.sdss-docs-sidebar.affix {position:static } 
+.sdss-docs-sidenav {margin-top:20px; margin-bottom:20px } 
+.sdss-docs-sidebar .nav>li>a {display:block; font-size:1em; font-weight:500; color:#999; padding:4px 20px } 
+.sdss-docs-sidebar .nav>li>a:hover,.sdss-docs-sidebar .nav>li>a:focus {padding-left:19px; color:@brand-sdss; text-decoration:none; background-color:transparent; border-left:1px solid @brand-sdss; } 
+.sdss-docs-sidebar .nav>.active>a,.sdss-docs-sidebar .nav>.active:hover>a,.sdss-docs-sidebar .nav>.active:focus>a {padding-left:18px; font-weight:700; color:@brand-sdss; background-color:transparent; border-left:2px solid @brand-sdss }
+ .sdss-docs-sidebar .nav .nav {display:none; padding-bottom:10px } 
+.sdss-docs-sidebar .nav .nav>li>a {padding-top:1px; padding-bottom:1px; padding-left:30px; font-size:.9em; font-weight:400 } 
+.sdss-docs-sidebar .nav .nav>li>a:hover,.sdss-docs-sidebar .nav .nav>li>a:focus {padding-left:29px } 
+.sdss-docs-sidebar .nav .nav>.active>a,.sdss-docs-sidebar .nav .nav>.active:hover>a,.sdss-docs-sidebar .nav .nav>.active:focus>a {font-weight:500; padding-left:28px }
+
+.back-to-top {margin-top:10px; margin-bottom: 10px; font-size:.9em; font-weight:400; color: @brand-sdss-text; font-variant: small-caps;
+&:hover {color: @brand-sdss; text-decoration:none;}
+} 
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+.display-posts-title {font-size: 15px;font-weight: bold;}
+.listing-item {margin-bottom: 10px;}
+
+.press
+{
+    margin-bottom: .75em;
+    background-color: #FFF;
+    overflow: hidden;
+      & .content {padding:15px}
+      & .entry-title {text-align:center;}
+      & .entry-summary {padding-left: .5em;}
+      & .author {padding-left: .5em;}
+      & .press-img-content {height: 196px;position: relative; overflow: hidden;}
+      & .press-img-content img {position: absolute; }
+      & .press-title {display: table-cell; vertical-align: bottom; z-index: 2; position: relative; } 
+}
+.thumbnail .caption {
+  background-color: @gray-lighter;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: .75em;
+}
+
+.post-block {
+width: 50%;
+float: left;
+margin-top: 1em;}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+.sitemap { background: #232323; padding: 30px 0 0 0; font-size: 12px; color: #999;
+      & a { color: #ccc; }
+      & a:hover {color: #fff; }
+      &  widget { margin-bottom:30px; }
+      & .widget-title { font-size: 17px; font-weight: bold; color: #ccc; margin: 0 0 20px; }
+      & .entry-meta { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 0 0 35px 0; padding: 2px 0; color: #888888; font-size: 12px; font-size: 0.75rem; }
+      & .entry-meta a { color: #333333; }
+      & .entry-meta .meta-in { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 10px 0; }
+}
+
+.follow-me-icons { font-size:30px; 
+      & i { float:left; margin:0 10px 0 0; }   
+}    
+
+#footer {background: #191919; padding-top: 15px; color: #777; font-size: 12px; min-height: 35px;}
+.social a { color: #aaa; }
+.social a:hover { color: #fff; }
+.social p { margin: 0; }
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+/*
+ * jquery.tocify.css 1.9.0
+ * Author: @gregfranko
+ */
+
+/* The Table of Contents container element */
+.tocify {
+    width: 20%;
+    max-height: 70%;
+    overflow: auto;
+    margin-left: 2%;
+    position: fixed;
+}
+
+/* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
+.tocify ul, .tocify li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    /*line-height: 30px;*/
+}
+
+/* Top level header elements */
+.tocify-header {
+    text-indent: 10px;
+}
+
+/* Top level subheader elements.  These are the first nested items underneath a header element. */
+.tocify-subheader {
+    text-indent: 20px;
+    display: none;
+}
+
+/* Makes the font smaller for all subheader elements. */
+.tocify-subheader li {
+    font-size: 14px;
+}
+/* Further indents second level subheader elements. */
+.tocify-subheader .tocify-subheader {
+    text-indent: 30px;
+}
+
+/* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
+.tocify-subheader .tocify-subheader .tocify-subheader {
+    text-indent: 40px;
+    font-size: 13px;
+}
+
+/* Twitter Bootstrap Override Style */
+.nav-list > li > a, .nav-list .nav-header {
+    margin: 0px;
+}
+
+/* Twitter Bootstrap Override Style */
+.nav-list > li > a {
+    padding: 5px;
+}
+
+li.tocify-item a {
+color: #777777;
+}
+
+li.tocify-item a:hover {
+color: #ffffff;
+background: rgba(0,0,0,0.9);
+transition: background 0.5s ease;
+border-left: 5px solid @brand-sdss;
+}
+
+.nav.nav-list>.active>a {
+  border-left: 5px solid @brand-sdss;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: @screen-xs-max) {
+  .navbar-inverse { background:rgba(0,0,0,.9); }
+  .sitemap img { max-width: 75%;}
+
+.navbar-nav {
+    > li > a {
+      &:hover,
+      &:focus {
+        border-bottom: none !important;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        border-bottom: none !important;
+      }
+    }
+  }
+
+}
+
+@media (min-width: @screen-sm-min) {
+.branding {position: absolute; text-align: left; right: 0; left: 0; bottom: 2em; padding: 1em 5% 1em 1em; max-width: 30em; width: auto; transition: padding-right 0.3s ease, background-color 0.3s ease;}
+.navbar-inverse .navbar-brand img {max-width: 150px}
+}
+
+@media (max-width: @screen-sm-max) { 
+.navbar-collapse ul { text-align: center;  width:100%; padding-bottom:10px; }
+.navbar-collapse ul .btn{ max-width:50%; margin:0 auto; } 
+}
+
+@media (min-width: @screen-xs-min) and (max-width: @screen-sm-min) { }
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {.nav {
+  font-size: (@font-size-base * .8375); }
+  .nav>li>a {padding: 5px;}
+  }
+
+@media (min-width: @screen-md-min) and (max-width: @screen-lg-min) {.nav {
+  font-size: (@font-size-base * 1.05); }
+  .nav>li>a {padding: 5px;}
+  }
+
+@media (min-width: @screen-md-min) {
+.sdss-docs-sidebar .nav>.active>ul {display:block } 
+.sdss-docs-sidebar.affix,.sdss-docs-sidebar.affix-bottom {width:213px } 
+.sdss-docs-sidebar.affix {position:fixed; top:50px } 
+.sdss-docs-sidebar.affix-bottom {position:absolute } 
+.sdss-docs-sidebar.affix-bottom .sdss-docs-sidenav,.sdss-docs-sidebar.affix .sdss-docs-sidenav {margin-top:0; margin-bottom:0 } 
+.navbar-inverse .navbar-brand img {max-width: 200px; margin-top: -5px;}
+}
+
+@media (min-width: @screen-lg-min) {
+.sdss-docs-sidebar.affix-bottom,.sdss-docs-sidebar.affix {width:263px } 
+ .nav {font-size: 18px; }
+ }
+
+@media (min-width: 400px) {
+  body { font-size: 75%; }
+}
+@media (min-width: 700px) {
+  body { font-size: 90%; }
+}
+@media (min-width: 850px) {
+  body {font-size: 100%; }
+}
+@media (min-width: 1000px) {
+  body {font-size: 110%; }
+}
+@media (min-width: 1100px) {
+  body {font-size: 115%;}
+}
+@media (min-width: 1450px) {
+  body {font-size: 125%; }
+}
+
+
