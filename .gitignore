@@ -34,3 +34,9 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+wp-config.php
+
+.htaccess
+
+wp-content/plugins/password-protect-wordpress/lava/_cache/h2o_22895a4383584ab39a58f04f61340877
